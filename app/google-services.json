@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "14821592743",
+    "project_id": "lucrare-licenta-626bb",
+    "storage_bucket": "lucrare-licenta-626bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14821592743:android:553a888482c14c1d7a5582",
+        "android_client_info": {
+          "package_name": "com.example.licentafii2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14821592743-kndmq7j8d4beuvg92dhm2g4mbfgtg6ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.licentafii2022",
+            "certificate_hash": "c7d56fbe02165d780cacd1525db72c3dfd007535"
+          }
+        },
+        {
+          "client_id": "14821592743-pptor3grf7s8il64gbvm1up13m342ij6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB85eBZIqiGbsP_lHD8yxgShTBy1Lv-Wd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14821592743-pptor3grf7s8il64gbvm1up13m342ij6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:background="@color/dark_grey"
+        android:textStyle="italic|bold"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/search_car_brand"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="4dp"
+        android:hint="Car brand and model"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/min_price_search"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_price_input"
+            android:drawablePadding="4dp"
+            android:hint="Min Price (€)"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey" />
+
+        <EditText
+            android:id="@+id/max_proce_search"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_price_input"
+            android:drawablePadding="4dp"
+            android:hint="Max Price (€)"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/min_km_search"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/road"
+            android:drawablePadding="4dp"
+            android:hint="Min Kilometers"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:hint="Max Kilometers"
+            android:textColorHint="@color/dark_grey"
+            android:id="@+id/max_km_search"
+            android:layout_margin="6dp"
+            android:paddingStart="5dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/road"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/min_motorSize_search"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_engine_input"
+            android:drawablePadding="4dp"
+            android:hint="Min Engine (L)"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:hint="Max Engine (L)"
+            android:textColorHint="@color/dark_grey"
+            android:id="@+id/max_motorSize_search"
+            android:layout_margin="6dp"
+            android:paddingStart="5dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/custom_engine_input"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Combustible (benzine/diesel/electric/gas)"
+        android:textColorHint="@color/dark_grey"
+        android:id="@+id/fuel_search"
+        android:layout_margin="6dp"
+        android:paddingStart="5dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/custom_fuel_input"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_input"/>
+
+    <Button
+        android:id="@+id/search_car_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

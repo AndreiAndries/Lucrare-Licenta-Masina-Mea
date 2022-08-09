@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostCarActivity">
+
+    <ImageView
+        android:id="@+id/post_image_car"
+        android:layout_width="165dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/choose_image_post_car_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:text="choose photo"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_image_car"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/post_car_name"
+        android:layout_width="304dp"
+        android:layout_height="51dp"
+        android:layout_margin="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="4dp"
+        android:hint="Car name, brand and year"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_image_post_car_button" />
+
+    <EditText
+        android:id="@+id/post_car_price"
+        android:layout_width="304dp"
+        android:layout_height="51dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_price_input"
+        android:drawablePadding="4dp"
+        android:hint="Price"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_car_name" />
+
+    <EditText
+        android:id="@+id/fuel_post_car"
+        android:layout_width="304dp"
+        android:layout_height="51dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_fuel_input"
+        android:drawablePadding="4dp"
+        android:hint="Combustible (benzine/diesel/electric/gas)"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_car_price" />
+
+    <EditText
+        android:id="@+id/post_car_km"
+        android:layout_width="304dp"
+        android:layout_height="51dp"
+        android:layout_margin="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/road"
+        android:drawablePadding="4dp"
+        android:hint="Kilometers"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_post_car" />
+
+    <EditText
+        android:id="@+id/post_car_engine_size"
+        android:layout_width="304dp"
+        android:layout_height="51dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_engine_input"
+        android:drawablePadding="4dp"
+        android:hint="Engine Size (L)"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_car_km" />
+
+    <Button
+        android:id="@+id/upload_car_button"
+        android:layout_width="228dp"
+        android:layout_height="52dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"
+        android:text="upload"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_car_engine_size"
+        />
+
+    <ProgressBar
+        android:id="@+id/post_car_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_car_button"
+        app:layout_constraintVertical_bias="0.368" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

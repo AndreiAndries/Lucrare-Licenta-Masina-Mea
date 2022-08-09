@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EditProfile">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:textColorHint="@color/dark_grey"
+        android:id="@+id/name_ep"
+        android:layout_margin="6dp"
+        android:paddingStart="5dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/custom_profile_input"
+        android:textColor="@color/dark_grey"
+        android:background="@drawable/custom_input"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Phone Number"
+        android:textColorHint="@color/dark_grey"
+        android:paddingStart="5dp"
+        android:id="@+id/phone_ep"
+        android:layout_margin="6dp"
+        android:drawableStart="@drawable/custom_phone_input"
+        android:drawablePadding="4dp"
+        android:textColor="@color/dark_grey"
+        android:background="@drawable/custom_input"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:paddingStart="5dp"
+        android:drawablePadding="4dp"
+        android:layout_margin="6dp"
+        android:textColorHint="@color/dark_grey"
+        android:id="@+id/email_ep"
+        android:textColor="@color/dark_grey"
+        android:drawableStart="@drawable/custom_email_input"
+        android:background="@drawable/custom_input"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="5dp"
+        android:hint="Bio"
+        android:layout_margin="6dp"
+        android:textColorHint="@color/dark_grey"
+        android:id="@+id/bio_ep"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/custom_info_input"
+        android:textColor="@color/dark_grey"
+        android:background="@drawable/custom_input"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save Profile"
+        android:id="@+id/button_ep"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

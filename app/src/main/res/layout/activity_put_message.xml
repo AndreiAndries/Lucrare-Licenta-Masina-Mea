@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PutMessage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="     Send Message"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:background="@color/dark_grey"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/custom_input"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/ask_pq"
+        android:paddingTop="30dp"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/submit_question_pq"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
